@@ -9,7 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron main.js",
     "tsc": "tsc",
-    "typings": "typings install"
+    "typings": "typings install",
+    "dist-win32-x64": "npm run tsc && electron-packager . --out=dist --platform=win32 --arch=x64 --overwrite",
+    "dist-all": "npm run tsc && electron-packager . --out=dist --platform=all --arch=all --overwrite"
   },
   "repository": {
     "type": "git",
