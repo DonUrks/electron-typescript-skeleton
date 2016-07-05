@@ -1,0 +1,35 @@
+{
+  "name": "electron-typescript-skeleton",
+  "version": "1.0.0",
+  "description": "A electron skeleton application with typescript support.",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "npm run typings",
+    "prestart": "npm run tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js",
+    "tsc": "tsc",
+    "typings": "typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonUrks/electron-typescript-skeleton.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "electron"
+  ],
+  "author": "Eric Müller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonUrks/electron-typescript-skeleton/issues"
+  },
+  "homepage": "https://github.com/DonUrks/electron-typescript-skeleton#readme",
+  "dependencies": {
+    "electron-packager": "^7.2.0",
+    "electron-prebuilt": "^1.2.5",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.1"
+  }
+}
